@@ -1,0 +1,41 @@
+{
+  "name": "eslint-config-yuer",
+  "version": "0.0.1",
+  "description": "ESLint shareable config for the yuer JavaScript style guide.",
+  "license": "MIT",
+  "author": "yuerbaby",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test/test.js",
+    "commitmsg": "validate-commit-msg",
+    "commit": "git-cz"
+  },
+  "files": [
+    "index.js",
+    "config"
+  ],
+  "keywords": [
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "eslint",
+    "validate",
+    "code style"
+  ],
+  "dependencies": {
+    "eslint-plugin-vue": "^4.7.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "commitizen": "^2.3.0",
+    "eslint": "^4.1.1",
+    "husky": "^0.13.1",
+    "validate-commit-msg": "^2.11.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=4.1.1"
+  }
+}
