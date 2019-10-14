@@ -2,6 +2,7 @@
   "name": "eslint-config-yuer",
   "version": "0.0.1",
   "description": "ESLint shareable config for the yuer JavaScript style guide.",
+  "main": "index.js",
   "license": "MIT",
   "author": "yuerbaby",
   "engines": {
@@ -10,7 +11,11 @@
   "scripts": {
     "test": "node test/test.js",
     "commitmsg": "validate-commit-msg",
-    "commit": "git-cz"
+    "commit": "git add . && git-cz",
+    "release": "standard-version",
+    "release:first": "npm run release -- --first-release",
+    "release:pre": "npm run release -- --prerelease",
+    "release:minor": "npm run release -- --release-as minor"
   },
   "files": [
     "index.js",
@@ -29,13 +34,38 @@
     "eslint-plugin-vue": "^4.7.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
     "babel-eslint": "^8.2.3",
     "commitizen": "^2.3.0",
+    "cz-conventional-changelog": "^3.0.2",
     "eslint": "^4.1.1",
-    "husky": "^0.13.1",
-    "validate-commit-msg": "^2.11.1"
+    "husky": "^0.13.4",
+    "standard-version": "^7.0.0"
   },
   "peerDependencies": {
     "eslint": ">=4.1.1"
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuerbaby/eslint-config-yuer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuerbaby/eslint-config-yuer/issues"
+  },
+  "homepage": "https://github.com/yuerbaby/eslint-config-yuer#readme",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }

@@ -155,7 +155,7 @@ module.exports = {
   'object-property-newline': 2,
   // off; 声明变量时，禁止一条语句声明多个变量
   'one-var': [
-    0,
+    2,
     {
       var: 'never',
       let: 'never',
