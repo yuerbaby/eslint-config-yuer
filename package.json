@@ -10,7 +10,6 @@
   },
   "scripts": {
     "test": "node test/test.js",
-    "commitmsg": "validate-commit-msg",
     "commit": "git add . && git-cz",
     "release": "standard-version",
     "release:first": "npm run release -- --first-release",

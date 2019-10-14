@@ -1,3 +1,7 @@
+/**
+ * ES6 代码风格规则
+ * @author yuerbaby
+ */
 module.exports = {
   // off; 箭头函数返回值可以只是一个值，没必须一定用大括号写成多条语句.
   'arrow-body-style': 0,

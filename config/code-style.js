@@ -1,3 +1,7 @@
+/**
+ * ESlint 代码风格规则
+ * @author yuerbaby
+ */
 module.exports = {
   // off; 数组前后括号必须换行的要求有点严格，不采纳
   'array-bracket-newline': 0,

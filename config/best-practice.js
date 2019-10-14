@@ -1,3 +1,7 @@
+/**
+ * ESlint 校验规则
+ * @author yuerbaby
+ */
 module.exports = {
   // error; for循转方向出错
   'for-direction': 2,

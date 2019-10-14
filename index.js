@@ -1,3 +1,7 @@
+/**
+ * 处理 ESlint 规则
+ * @author yuerbaby
+ */
 'use strict'
 // 最佳实践
 var bestPractice = require('./config/best-practice')

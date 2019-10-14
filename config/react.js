@@ -1,3 +1,7 @@
+/**
+ * react 代码风格规则
+ * @author yuerbaby
+ */
 module.exports = {
   parser: 'babel-eslint',
   plugins: ['react'],

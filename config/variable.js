@@ -1,3 +1,7 @@
+/**
+ * 通用变量
+ * @author yuerbaby
+ */
 module.exports = {
   // off; 变量定义时强制赋值或者强制先定义后赋值有点严格
   'init-declarations': 0,
